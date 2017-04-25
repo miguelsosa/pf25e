@@ -19,3 +19,33 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore backup files
+*~
+*.bak
+\#*\#
+\.\#*\#
+/\.\#*
+
+# Ignore mac folder attribute file
+.DS_Store
+
+# Ignore env
+.env
+
+# Ignore trash directory
+/TRASH/*
+
+# Ignore rspec configuration file and examples text
+.rspec
+spec/examples.txt
+
+# Ingure DNU files (files)
+DNU*
+
+
+# Ignore pre-compiled assets in public folder
+public/assets
+
+# Ignore files made by Jet Brains' RubyMine or Jet Brains Intellij IDE
+.idea/
