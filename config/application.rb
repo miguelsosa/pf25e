@@ -11,5 +11,17 @@ module Pf25e
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    config.generators do |g|
+      g.template_engine :erb
+      g.helper false
+      g.stylesheets false
+      g.javascripts false
+      g.view_specs false
+      g.controller_specs false
+      g.request_specs false
+      g.helper_specs false
+      g.routing_specs false
+    end
   end
 end

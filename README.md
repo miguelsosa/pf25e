@@ -1,21 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Store D&D 5e monster blocks; Used for storing conversions from
+pathfinder, but could be used to store any monsters.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
+* Ruby version: 
+2.3.1
 
 * Database creation
+createuser pf25e_dbuser --createdb -P
 
 * Database initialization
+rails db:setup
+rails db:migreate
 
 * How to run the test suite
+rails rspec
 
 * Services (job queues, cache servers, search engines, etc.)
 
