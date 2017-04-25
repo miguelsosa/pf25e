@@ -1,0 +1,72 @@
+<%= form_for(monster) do |f| %>
+  <% if monster.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(monster.errors.count, "error") %> prohibited this monster from being saved:</h2>
+
+      <ul>
+      <% monster.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cr %>
+    <%= f.text_field :cr %>
+  </div>
+
+  <div class="field">
+    <%= f.label :xp %>
+    <%= f.number_field :xp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ac %>
+    <%= f.number_field :ac %>
+  </div>
+
+  <div class="field">
+    <%= f.label :hp %>
+    <%= f.number_field :hp %>
+  </div>
+
+  <div class="field">
+    <%= f.label :str %>
+    <%= f.number_field :str %>
+  </div>
+
+  <div class="field">
+    <%= f.label :dex %>
+    <%= f.number_field :dex %>
+  </div>
+
+  <div class="field">
+    <%= f.label :con %>
+    <%= f.number_field :con %>
+  </div>
+
+  <div class="field">
+    <%= f.label :wis %>
+    <%= f.number_field :wis %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cha %>
+    <%= f.number_field :cha %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
