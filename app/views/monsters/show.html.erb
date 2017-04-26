@@ -1,59 +1,51 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @monster.name %>
-</p>
+<div class="monster_heading">
+  <span class="name">
+    <%= @monster.name %>
+  </span>
+  </br>
+  <span class="cr">
+    <strong>CR:</strong>
+    <%= @monster.cr %>
+  </span>
+  <span class="XP">
+    <strong>XP:</strong>
+    <%= @monster.xp %>
+  </span>
+</div>
 
-<p>
-  <strong>Cr:</strong>
-  <%= @monster.cr %>
-</p>
+<hr>
 
-<p>
-  <strong>Xp:</strong>
-  <%= @monster.xp %>
-</p>
+<table class="ac_block">
+  <tr>
+    <td><strong>Armor Class:</strong></td> <td><%= @monster.ac %></td>
+  </tr> 
+  <tr>	
+    <td><strong>Hit Points:</strong> <%= @monster.hp %></td>
+  </tr> 
+  <tr>
+    <td><strong>Speed:</strong> <%= 'TBD SPEED' %></td>
+  </tr> 
+</table>
 
-<p>
-  <strong>Ac:</strong>
-  <%= @monster.ac %>
-</p>
+<hr>
 
-<p>
-  <strong>Hp:</strong>
-  <%= @monster.hp %>
-</p>
+<table class="stat_block">
+  <td><strong>Str:</strong> <%= ability(@monster.str) %></td>
+  <td><dexong>Dex:</dexong> <%= ability(@monster.dex) %></td>
+  <td><conong>Con:</conong> <%= ability(@monster.con) %></td>
+  <td><intong>Int:</intong> <%= ability(@monster.int) %></td>
+  <td><wisong>Wis:</wisong> <%= ability(@monster.wis) %></td>
+  <td><chaong>Cha:</chaong> <%= ability(@monster.cha) %></td>
+</table>
 
-<p>
-  <strong>Str:</strong>
-  <%= @monster.str %>
-</p>
+<hr>
 
-<p>
-  <strong>Dex:</strong>
-  <%= @monster.dex %>
-</p>
-
-<p>
-  <strong>Con:</strong>
-  <%= @monster.con %>
-</p>
-
-<p>
-  <strong>Wis:</strong>
-  <%= @monster.wis %>
-</p>
-
-<p>
-  <strong>Cha:</strong>
-  <%= @monster.cha %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @monster.description %>
-</p>
+<strong>Description:</strong>
+<div class="description_block">
+<%= @monster.description %>
+</div>
 
 <%= link_to 'Edit', edit_monster_path(@monster) %> |
 <%= link_to 'Back', monsters_path %>

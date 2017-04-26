@@ -1,3 +1,17 @@
 // Place all the styles related to the monsters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+.name {
+    font: 150% $font-stack;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.description_block {
+    white-space: pre;
+}
+
