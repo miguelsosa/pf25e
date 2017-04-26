@@ -21,3 +21,7 @@ rails rspec
 * Deployment instructions
 
 * ...
+
+TODO: Allow for scraping from paizo:
+http://paizo.com/pathfinderRPG/prd/bestiary/hobgoblin.html#hobgoblin
+and automodifying into our own DB.
